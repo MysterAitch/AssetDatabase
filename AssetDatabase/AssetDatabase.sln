@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetDatabase.API", "AssetD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetDatabase.Web", "AssetDatabase.Web\AssetDatabase.Web.csproj", "{191E9B97-CC60-4486-AC27-1D59B97D1740}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetDatabase.API.Test", "AssetDatabase.API.Test\AssetDatabase.API.Test.csproj", "{FA4E3A87-D60F-4BFC-866B-4A7B6B5B8B39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{191E9B97-CC60-4486-AC27-1D59B97D1740}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{191E9B97-CC60-4486-AC27-1D59B97D1740}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{191E9B97-CC60-4486-AC27-1D59B97D1740}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA4E3A87-D60F-4BFC-866B-4A7B6B5B8B39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA4E3A87-D60F-4BFC-866B-4A7B6B5B8B39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA4E3A87-D60F-4BFC-866B-4A7B6B5B8B39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA4E3A87-D60F-4BFC-866B-4A7B6B5B8B39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
