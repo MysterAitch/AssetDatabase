@@ -59,5 +59,6 @@ jobs:
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"MysterAitch_AssetDatabase" /o:"mysteraitch-org" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
           dotnet build .\AssetDatabase\AssetDatabase.sln
-          dotnet test .\AssetDatabase\AssetDatabase.sln
+          dotnet test .\AssetDatabase\AssetDatabase.sln --collect:"XPlat Code Coverage"
+          reportgenerator -reports:./**/coverage.cobertura.xml -targetdir:./AssetDatabase/CoverageReport -reporttypes:SonarQube
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
